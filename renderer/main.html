@@ -1,37 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="../bower_components/bulma/css/bulma.css">
-    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="../bower_components/bulma/css/bulma.css">
+  <link rel="stylesheet" href="../bower_components/bulma/css/">
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
-    <section class="section">
-        <div class="container">
-          <h1 class="title">
-            Hello World
-          </h1>
-          <p class="subtitle">
-            My first website with <strong>Bulma</strong>!
-          </p>
-          <a href="chart.html">Go to chart section</a>
+  <section class="section">
+
+    <div class="container">
+      <div class="columns">
+        <div class="box" style="width: 500px;">
+          <div class="column is-two-fifths">
+            <strong>Table 1</strong>
+          </div>
         </div>
-      </section>
+        <div class="box" style="width: 500px;">
+          <div class="column">75,000VND</div>
+        </div>
+        <div class="column">
+          <a class="button is-info is-large is-outlined">
+            Purchased
+          </a>
+        </div>
+      </div>
+    </div>
 
-    <script>
+    <div class="container">
+      <div class="columns">
+        <div class="box" style="width: 500px;">
+          <div class="column is-two-fifths">
+            <strong>Table 2</strong>
+          </div>
+        </div>
+        <div class="box" style="width: 500px;">
+          <div class="column">60,000VND</div>
+        </div>
+        <div class="column">
+          <a class="button is-info is-large is-outlined">
+            Purchased
+          </a>
+        </div>
+      </div>
+    </div>
 
-        //jquery
-        $ = require('jquery')
+    <div class="container">
+      <div class="columns">
+        <div class="box" style="width: 500px;">
+          <div class="column is-two-fifths">
+            <strong>Table 3</strong>
+          </div>
+        </div>
+        <div class="box" style="width: 500px;">
+          <div class="column">80,000VND</div>
+        </div>
+        <div class="column">
+          <a class="button is-info is-large is-outlined">
+            Purchased
+          </a>
+        </div>
+      </div>
+    </div>
 
-        // main app script
-        app = require('./js/app.js')    
+    <div class="container">
+        <div class="columns">
+        <div class="box" id="style-button">
+            <h3><a href=# id="add-item">Add</a></h3>
+          </div>
+          </div>
+    </div>
+  </div>
+  </section>
 
-        console.log(localStorage.length)
 
-    </script>
+  <script>
+    //jquery
+    $ = require('jquery')
+
+    // main app script
+    app = require('./js/app.js')
+
+    console.log(localStorage.length)
+  </script>
 </body>
+
 </html>
